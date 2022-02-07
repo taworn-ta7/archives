@@ -1,0 +1,179 @@
+{
+	"app": "แจ็คเก็ต",
+	"switchLocale": {
+		"english": "English",
+		"thai": "ไทย"
+	},
+	"common": {
+		"close": "ปิด",
+		"ok": "ตกลง",
+		"cancel": "ยกเลิก",
+		"yes": "ใช่",
+		"no": "ไม่ใช่",
+		"retry": "ลองใหม่",
+		"name": "ชื่อ",
+		"value": "ค่า",
+		"create": "สร้าง",
+		"createMore": "สร้าง...",
+		"update": "บันทึก",
+		"updateMore": "บันทึก...",
+		"remove": "ลบ",
+		"removeMore": "ลบ..."
+	},
+	"question": {
+		"areYouSureToExit": "คุณแน่ใจที่จะออกจากโปรแกรมนี้หรือไม่?",
+		"areYouSureToDelete": "คุณแน่ใจที่จะลบข้อมูลนี้หรือไม่?",
+		"areYouSureToLeave": "คุณแน่ใจที่จะออกจากหน้านี้โดยไม่เซฟข้อมูล?"
+	},
+	"validator": {
+		"isPositiveInt": "กรอก $name เป็นเลขจำนวนเต็มบวก",
+		"isPositiveOrZeroInt": "กรอก $name เป็นเลขจำนวนเต็มบวกหรือศูนย์",
+		"isNegativeInt": "กรอก $name เป็นเลขจำนวนเต็มลบ",
+		"isNegativeOrZeroInt": "กรอก $name เป็นเลขจำนวนเต็มลบหรือศูนย์",
+		"isPositiveFloat": "กรอก $name เป็นเลขจำนวนทศนิยมบวก",
+		"isPositiveOrZeroFloat": "กรอก $name เป็นเลขจำนวนทศนิยมบวกหรือศูนย์",
+		"isNegativeFloat": "กรอก $name เป็นเลขจำนวนทศนิยมลบ",
+		"isNegativeOrZeroFloat": "กรอก $name เป็นเลขจำนวนทศนิยมลบหรือศูนย์",
+		"isMoney": "กรอก $name เป็นเลขจำนวนเงิน."
+	},
+	"messageBox": {
+		"info": "ข้อมูลข่าวสาร",
+		"warning": "แจ้งเตือน",
+		"error": "เกิดข้อผิดพลาด",
+		"question": "คำถาม"
+	},
+	"waitBox": {
+		"message": "โปรดรอสักครู่..."
+	},
+	"serviceRunner": {
+		"message": "เกิดข้อผิดพลาดบนเน็ตเวิร์ค!"
+	},
+	"paginator": {
+		"first": "ไปยังหน้าแรก",
+		"previous": "ไปยังหน้าที่แล้ว",
+		"next": "ไปยังหน้าถัดไป",
+		"last": "ไปยังหน้าสุดท้าย",
+		"go": "ไป"
+	},
+	"imageChooser": {
+		"upload": "อัพโหลด",
+		"reset": "รีเซ็ต",
+		"revert": "ย้อนกลับ"
+	},
+	"trash": {
+		"trash": "ดูในถังขยะ",
+		"normal": "ดูปกติ"
+	},
+	"appBar": {
+		"openMenu": "เปิดโปรไฟล์เมนู",
+		"editProfileIcon": "ปรับปรุงโปรไฟล์ไอคอน...",
+		"editDisplayName": "แก้ไขชื่อของท่าน...",
+		"editPassword": "เปลี่ยนแปลงรหัสผ่าน...",
+		"needRelogin": "คุณต้องเข้าสู่ระบบอีกครั้ง!",
+		"logout": "ออกจากระบบ"
+	},
+	"searchBar": {
+		"open": "เปิดการค้นหา...",
+		"hint": "ค้นหา..."
+	},
+	"editProfileIconPage": {
+		"title": "ปรับปรุงโปรไฟล์ไอคอน",
+		"profileIcon": "โปรไฟล์ไอคอน",
+		"profileIconUpload": "อัพโหลดรูปโปรไฟล์",
+		"profileIconReset": "รีเซตเป็นค่าเดิม"
+	},
+	"editDisplayNamePage": {
+		"title": "แก้ไขชื่อของท่าน",
+		"displayName": "ชื่อของท่าน",
+		"displayNameHint": "ความยาวต่ำสุด: 4 ตัวอักษร, ความยาวสูงสุด: 50 ตัวอักษร",
+		"displayNameValidator": "กรอก $name เป็นจำนวน 4-50 ตัวอักษร"
+	},
+	"editPasswordPage": {
+		"title": "เปลี่ยนแปลงรหัสผ่าน",
+		"password": "รหัสผ่าน",
+		"passwordHint": "ความยาวต่ำสุด: 4 ตัวอักษร, ความยาวสูงสุด: 20 ตัวอักษร",
+		"passwordValidator": "กรอก $name เป็นจำนวน 4-20 ตัวอักษร",
+		"confirmPassword": "ยืนยันรหัสผ่าน",
+		"confirmPasswordHint": "ความยาวต่ำสุด: 4 ตัวอักษร, ความยาวสูงสุด: 20 ตัวอักษร",
+		"confirmPasswordValidator": "กรอก $name เป็นจำนวน 4-20 ตัวอักษร"
+	},
+	"drawerUi": {
+		"title": "สวัสดี",
+		"home": "เริ่มต้น",
+		"sku": "รายการ SKU",
+		"product": "รายการสินค้า"
+	},
+	"loginPage": {
+		"title": "เข้าสู่ระบบ",
+		"username": "ชื่อผู้ใช้",
+		"password": "รหัสผ่าน",
+		"reset": "รีเซ็ต",
+		"ok": "เข้าสู่ระบบ",
+		"or": "-- หรือ --",
+		"register": "ลงทะเบียน..."
+	},
+	"registerPage": {
+		"title": "ลงทะเบียน",
+		"username": "ชื่อผู้ใช้",
+		"usernameHint": "ความยาวต่ำสุด: 4 ตัวอักษร, ความยาวสูงสุด: 20 ตัวอักษร",
+		"usernameValidator": "กรอก $name เป็นจำนวน 4-20 ตัวอักษร",
+		"displayName": "ชื่อของท่าน",
+		"displayNameHint": "ความยาวต่ำสุด: 4 ตัวอักษร, ความยาวสูงสุด: 50 ตัวอักษร",
+		"displayNameValidator": "กรอก $name เป็นจำนวน 4-50 ตัวอักษร",
+		"password": "รหัสผ่าน",
+		"passwordHint": "ความยาวต่ำสุด: 4 ตัวอักษร, ความยาวสูงสุด: 20 ตัวอักษร",
+		"passwordValidator": "กรอก $name เป็นจำนวน 4-20 ตัวอักษร",
+		"confirmPassword": "ยืนยันรหัสผ่าน",
+		"confirmPasswordHint": "ความยาวต่ำสุด: 4 ตัวอักษร, ความยาวสูงสุด: 20 ตัวอักษร",
+		"confirmPasswordValidator": "กรอก $name เป็นจำนวน 4-20 ตัวอักษร"
+	},
+	"dashboardPage": {
+		"title": "กระดานของคุณ",
+		"displayName": "ชื่อของท่าน",
+		"createdAi": "วันที่ลงทะเบียน"
+	},
+	"skuListPage": {
+		"title": "รายการ SKU",
+		"sortById": "ID",
+		"sortByCodeAsc": "Code น้อยไปมาก",
+		"sortByCodeDesc": "Code มากไปน้อย",
+		"sortByBarcodeAsc": "บาร์โค๊ด น้อยไปมาก",
+		"sortByBarcodeDesc": "บาร์โค๊ด มากไปน้อย",
+		"sortByCostAsc": "ต้นทุน น้อยไปมาก",
+		"sortByCostDesc": "ต้นทุน มากไปน้อย",
+		"sortByPriceAsc": "ราคา น้อยไปมาก",
+		"sortByPriceDesc": "ราคา มากไปน้อย",
+		"sortByQuantityAsc": "จำนวน น้อยไปมาก",
+		"sortByQuantityDesc": "จำนวน มากไปน้อย",
+		"barcodeFormat": "บาร์โค๊ด: $barcode",
+		"barcodeNotFound": "ไม่พบบาร์โค๊ด",
+		"create": "สร้าง SKU",
+		"createMore": "สร้าง SKU...",
+		"createHint": "สร้าง SKU ใหม่"
+	},
+	"skuEditPage": {
+		"title": "แก้ไข $name",
+		"barcode": "บาร์โค๊ด",
+		"barcodeHint": "ตัวอย่าง: 123456789012, 12 ตัวอักษร",
+		"barcodeValidator": "กรอก $name เป็นจำนวน 12 ตัวอักษร หรือ ไม่ต้องกรอก",
+		"cost": "ต้นทุน",
+		"costHint": "ต้นทุนที่ซื้อมา",
+		"price": "ราคา",
+		"priceHint": "ราคาที่ขายไป",
+		"quantity": "จำนวน",
+		"quantityHint": "จำนวนในสต๊อก",
+		"image": "รูป SKU"
+	},
+	"productListPage": {
+		"title": "รายการสินค้า",
+		"sortById": "ID",
+		"sortByNameAsc": "ชื่อ น้อยไปมาก",
+		"sortByNameDesc": "ชื่อ มากไปน้อย",
+		"create": "สร้างสินค้า",
+		"createMore": "สร้างสินค้า...",
+		"createHint": "สร้างสินค้าใหม่."
+	},
+	"productEditPage": {
+		"title": "แก้ไข $name"
+	}
+}

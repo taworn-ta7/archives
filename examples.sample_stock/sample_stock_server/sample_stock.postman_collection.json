@@ -1,0 +1,1205 @@
+{
+	"info": {
+		"_postman_id": "074d995b-e702-47a1-b91b-ccaf07bc84ba",
+		"name": "sample_stock",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "authen",
+			"item": [
+				{
+					"name": "login: admin",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"let ret = pm.response.json()\r",
+									"pm.environment.set(\"token\", ret.user.token)\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"login\": {\r\n        \"username\": \"admin\",\r\n        \"password\": \"admin//pass\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}authen/login",
+							"host": [
+								"{{host}}{{path}}authen"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login: user0",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"let ret = pm.response.json()\r",
+									"pm.environment.set(\"token\", ret.user.token)\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"login\": {\r\n        \"username\": \"user0\",\r\n        \"password\": \"user0//pass\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}authen/login",
+							"host": [
+								"{{host}}{{path}}authen"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login: user0, changed password",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"let ret = pm.response.json()\r",
+									"pm.environment.set(\"token\", ret.user.token)\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"login\": {\r\n        \"username\": \"user0\",\r\n        \"password\": \"PASSWORD\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}authen/login",
+							"host": [
+								"{{host}}{{path}}authen"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login: user1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"let ret = pm.response.json()\r",
+									"pm.environment.set(\"token\", ret.user.token)\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"login\": {\r\n        \"username\": \"user1\",\r\n        \"password\": \"user1//pass\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}authen/login",
+							"host": [
+								"{{host}}{{path}}authen"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login: user1, changed password",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"let ret = pm.response.json()\r",
+									"pm.environment.set(\"token\", ret.user.token)\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"login\": {\r\n        \"username\": \"user1\",\r\n        \"password\": \"PASSWORD\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}authen/login",
+							"host": [
+								"{{host}}{{path}}authen"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login: user2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"let ret = pm.response.json()\r",
+									"pm.environment.set(\"token\", ret.user.token)\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"login\": {\r\n        \"username\": \"user2\",\r\n        \"password\": \"user2//pass\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}authen/login",
+							"host": [
+								"{{host}}{{path}}authen"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login: user3a, not exists",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"let ret = pm.response.json()\r",
+									"pm.environment.set(\"token\", ret.user.token)\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"login\": {\r\n        \"username\": \"user3a\",\r\n        \"password\": \"user3//pass\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}authen/login",
+							"host": [
+								"{{host}}{{path}}authen"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login: user3~, invalid username",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"let ret = pm.response.json()\r",
+									"pm.environment.set(\"token\", ret.user.token)\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"login\": {\r\n        \"username\": \"user3~\",\r\n        \"password\": \"user3//pass\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}authen/login",
+							"host": [
+								"{{host}}{{path}}authen"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "sku",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"skus\": [\r\n        {\r\n            \"code\": \"C-001\",\r\n            \"barcode\": \"123456789012\",\r\n            \"cost\": \"100\",\r\n            \"price\": \"1000\",\r\n            \"quantity\": 999\r\n        },\r\n        {\r\n            \"code\": \"C-002\",\r\n            \"barcode\": \"123456789024\",\r\n            \"cost\": \"150\",\r\n            \"price\": \"1500\",\r\n            \"quantity\": 99\r\n        },\r\n        {\r\n            \"code\": \"C-003\",\r\n            \"barcode\": \"123456789036\",\r\n            \"cost\": \"200\",\r\n            \"price\": \"2000\",\r\n            \"quantity\": 500\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}sku",
+							"host": [
+								"{{host}}{{path}}sku"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create: another codes",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"skus\": [\r\n        {\r\n            \"code\": \"D-101\",\r\n            \"barcode\": \"123456789012\",\r\n            \"cost\": \"1000\",\r\n            \"price\": \"3000\",\r\n            \"quantity\": 555\r\n        },\r\n        {\r\n            \"code\": \"D-102\",\r\n            \"barcode\": \"123456789024\",\r\n            \"cost\": \"900\",\r\n            \"price\": \"3000\",\r\n            \"quantity\": 444\r\n        },\r\n        {\r\n            \"code\": \"D-103\",\r\n            \"barcode\": \"123456789036\",\r\n            \"cost\": \"500\",\r\n            \"price\": \"2000\",\r\n            \"quantity\": 333\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}sku",
+							"host": [
+								"{{host}}{{path}}sku"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create: error, duplicate",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"skus\": [\r\n        {\r\n            \"code\": \"C-001\",\r\n            \"barcode\": \"123456789012\",\r\n            \"cost\": \"100\",\r\n            \"price\": \"1000\",\r\n            \"quantity\": 999\r\n        },\r\n        {\r\n            \"code\": \"C-002\",\r\n            \"barcode\": \"123456789024\",\r\n            \"cost\": \"150\",\r\n            \"price\": \"1500\",\r\n            \"quantity\": 99\r\n        },\r\n        {\r\n            \"code\": \"C-001\",\r\n            \"barcode\": \"123456789036\",\r\n            \"cost\": \"200\",\r\n            \"price\": \"2000\",\r\n            \"quantity\": 500\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}sku",
+							"host": [
+								"{{host}}{{path}}sku"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find all: default",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}sku",
+							"host": [
+								"{{host}}{{path}}sku"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find all: test #1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}sku?page=0&order=q-,code-&search=&trash=",
+							"host": [
+								"{{host}}{{path}}sku"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "order",
+									"value": "q-,code-"
+								},
+								{
+									"key": "search",
+									"value": ""
+								},
+								{
+									"key": "trash",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find all: test #2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}sku?page=0&order=cost-,code-&search=D-1&trash=0",
+							"host": [
+								"{{host}}{{path}}sku"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "order",
+									"value": "cost-,code-"
+								},
+								{
+									"key": "search",
+									"value": "D-1"
+								},
+								{
+									"key": "trash",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find all: test in trash #1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}sku?page=0&order=q-&search=C-0&trash=1",
+							"host": [
+								"{{host}}{{path}}sku"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "order",
+									"value": "q-"
+								},
+								{
+									"key": "search",
+									"value": "C-0"
+								},
+								{
+									"key": "trash",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find all: test in trash #2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}sku?page=0&order=price-&search=D-1&trash=1",
+							"host": [
+								"{{host}}{{path}}sku"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "order",
+									"value": "price-"
+								},
+								{
+									"key": "search",
+									"value": "D-1"
+								},
+								{
+									"key": "trash",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find one",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}sku/:code",
+							"host": [
+								"{{host}}{{path}}sku"
+							],
+							"path": [
+								":code"
+							],
+							"variable": [
+								{
+									"key": "code",
+									"value": "C-001"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find one: error",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}sku/:code",
+							"host": [
+								"{{host}}{{path}}sku"
+							],
+							"path": [
+								":code"
+							],
+							"variable": [
+								{
+									"key": "code",
+									"value": "C_001"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find one: error input",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}sku/:code",
+							"host": [
+								"{{host}}{{path}}sku"
+							],
+							"path": [
+								":code"
+							],
+							"variable": [
+								{
+									"key": "code",
+									"value": "no one"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update: #1",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"sku\": {\r\n        \"barcode\": \"999456789012\",\r\n        \"cost\": \"100.501\",\r\n        \"price\": \"1000.505\",\r\n        \"quantity\": 1001\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}sku/:code",
+							"host": [
+								"{{host}}{{path}}sku"
+							],
+							"path": [
+								":code"
+							],
+							"variable": [
+								{
+									"key": "code",
+									"value": "C-001"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update: #2",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"sku\": {\r\n        \"barcode\": null,\r\n        \"quantity\": 987\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}sku/:code",
+							"host": [
+								"{{host}}{{path}}sku"
+							],
+							"path": [
+								":code"
+							],
+							"variable": [
+								{
+									"key": "code",
+									"value": "C-001"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "upload image",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}{{path}}sku/image/:code",
+							"host": [
+								"{{host}}{{path}}sku"
+							],
+							"path": [
+								"image",
+								":code"
+							],
+							"variable": [
+								{
+									"key": "code",
+									"value": "C-001"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "remove uploaded image",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}sku/image/:code/remove",
+							"host": [
+								"{{host}}{{path}}sku"
+							],
+							"path": [
+								"image",
+								":code",
+								"remove"
+							],
+							"variable": [
+								{
+									"key": "code",
+									"value": "C-001"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "remove",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}sku/:code",
+							"host": [
+								"{{host}}{{path}}sku"
+							],
+							"path": [
+								":code"
+							],
+							"variable": [
+								{
+									"key": "code",
+									"value": "C-001"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "remove: error",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}sku/:code",
+							"host": [
+								"{{host}}{{path}}sku"
+							],
+							"path": [
+								":code"
+							],
+							"variable": [
+								{
+									"key": "code",
+									"value": "C_001"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "product",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\": {\r\n        \"name\": \"P-001\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}product",
+							"host": [
+								"{{host}}{{path}}product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create: another name",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\": {\r\n        \"name\": \"P-111\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}product",
+							"host": [
+								"{{host}}{{path}}product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find all: default",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}product",
+							"host": [
+								"{{host}}{{path}}product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find all: test #1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}product?page=0&order=id-",
+							"host": [
+								"{{host}}{{path}}product"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "order",
+									"value": "id-"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find all: test #2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}product?page=0&order=name-&search=P-1",
+							"host": [
+								"{{host}}{{path}}product"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "order",
+									"value": "name-"
+								},
+								{
+									"key": "search",
+									"value": "P-1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find one",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}product/:id",
+							"host": [
+								"{{host}}{{path}}product"
+							],
+							"path": [
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\": {\r\n        \"skus\": [\r\n            \"C-001\",\r\n            \"C_0001\",\r\n            \"C-002\",\r\n            \"C_0002\"\r\n        ]\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}product/:id",
+							"host": [
+								"{{host}}{{path}}product"
+							],
+							"path": [
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "remove",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}product/:id",
+							"host": [
+								"{{host}}{{path}}product"
+							],
+							"path": [
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{token}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

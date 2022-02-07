@@ -1,0 +1,1430 @@
+{
+	"info": {
+		"_postman_id": "cddc4840-793f-4f35-9851-9886c6eddd37",
+		"name": "vulcan",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "authen",
+			"item": [
+				{
+					"name": "login: admin",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"let ret = pm.response.json()\r",
+									"pm.environment.set(\"token\", ret.user.token)\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"login\": {\r\n        \"username\": \"admin\",\r\n        \"password\": \"admin//pass\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}authen/login",
+							"host": [
+								"{{host}}{{path}}authen"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login: user0",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"let ret = pm.response.json()\r",
+									"pm.environment.set(\"token\", ret.user.token)\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"login\": {\r\n        \"username\": \"user0\",\r\n        \"password\": \"user0//pass\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}authen/login",
+							"host": [
+								"{{host}}{{path}}authen"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login: user0, changed password",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"let ret = pm.response.json()\r",
+									"pm.environment.set(\"token\", ret.user.token)\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"login\": {\r\n        \"username\": \"user0\",\r\n        \"password\": \"PASSWORD\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}authen/login",
+							"host": [
+								"{{host}}{{path}}authen"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login: user1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"let ret = pm.response.json()\r",
+									"pm.environment.set(\"token\", ret.user.token)\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"login\": {\r\n        \"username\": \"user1\",\r\n        \"password\": \"user1//pass\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}authen/login",
+							"host": [
+								"{{host}}{{path}}authen"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login: user1, changed password",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"let ret = pm.response.json()\r",
+									"pm.environment.set(\"token\", ret.user.token)\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"login\": {\r\n        \"username\": \"user1\",\r\n        \"password\": \"PASSWORD\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}authen/login",
+							"host": [
+								"{{host}}{{path}}authen"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login: user2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"let ret = pm.response.json()\r",
+									"pm.environment.set(\"token\", ret.user.token)\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"login\": {\r\n        \"username\": \"user2\",\r\n        \"password\": \"user2//pass\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}authen/login",
+							"host": [
+								"{{host}}{{path}}authen"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login: user3a, not exists",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"let ret = pm.response.json()\r",
+									"pm.environment.set(\"token\", ret.user.token)\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"login\": {\r\n        \"username\": \"user3a\",\r\n        \"password\": \"user3//pass\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}authen/login",
+							"host": [
+								"{{host}}{{path}}authen"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login: user3~, invalid username",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"let ret = pm.response.json()\r",
+									"pm.environment.set(\"token\", ret.user.token)\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"login\": {\r\n        \"username\": \"user3~\",\r\n        \"password\": \"user3//pass\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}authen/login",
+							"host": [
+								"{{host}}{{path}}authen"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login: user4",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"let ret = pm.response.json()\r",
+									"pm.environment.set(\"token\", ret.user.token)\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"login\": {\r\n        \"username\": \"user4\",\r\n        \"password\": \"user4//pass\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}authen/login",
+							"host": [
+								"{{host}}{{path}}authen"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login: user5",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"let ret = pm.response.json()\r",
+									"pm.environment.set(\"token\", ret.user.token)\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"login\": {\r\n        \"username\": \"user5\",\r\n        \"password\": \"user5//pass\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}authen/login",
+							"host": [
+								"{{host}}{{path}}authen"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login: user6",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"let ret = pm.response.json()\r",
+									"pm.environment.set(\"token\", ret.user.token)\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"login\": {\r\n        \"username\": \"user6\",\r\n        \"password\": \"user6//pass\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}authen/login",
+							"host": [
+								"{{host}}{{path}}authen"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logout",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}authen/logout",
+							"host": [
+								"{{host}}{{path}}authen"
+							],
+							"path": [
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "check",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}authen/check",
+							"host": [
+								"{{host}}{{path}}authen"
+							],
+							"path": [
+								"check"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "admin",
+			"item": [
+				{
+					"name": "disable/enable: disabled=true",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user\": {\r\n        \"disabled\": true\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}admin/disable/:username",
+							"host": [
+								"{{host}}{{path}}admin"
+							],
+							"path": [
+								"disable",
+								":username"
+							],
+							"variable": [
+								{
+									"key": "username",
+									"value": "user0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "disable/enable: disabled=false",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user\": {\r\n        \"disabled\": false\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}admin/disable/:username",
+							"host": [
+								"{{host}}{{path}}admin"
+							],
+							"path": [
+								"disable",
+								":username"
+							],
+							"variable": [
+								{
+									"key": "username",
+									"value": "user0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "disable/enable: error",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user\": {\r\n        \"disabled\": true\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}admin/disable/:username",
+							"host": [
+								"{{host}}{{path}}admin"
+							],
+							"path": [
+								"disable",
+								":username"
+							],
+							"variable": [
+								{
+									"key": "username",
+									"value": "user999999999"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "disable/enable: error json",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user\": {\r\n        \"disabled_\": true\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}admin/disable/:username",
+							"host": [
+								"{{host}}{{path}}admin"
+							],
+							"path": [
+								"disable",
+								":username"
+							],
+							"variable": [
+								{
+									"key": "username",
+									"value": "user0"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}user/id/:username",
+							"host": [
+								"{{host}}{{path}}user"
+							],
+							"path": [
+								"id",
+								":username"
+							],
+							"variable": [
+								{
+									"key": "username",
+									"value": "user0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "id: error",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}user/id/:username",
+							"host": [
+								"{{host}}{{path}}user"
+							],
+							"path": [
+								"id",
+								":username"
+							],
+							"variable": [
+								{
+									"key": "username",
+									"value": "user999999999"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "icon",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}user/icon/:username",
+							"host": [
+								"{{host}}{{path}}user"
+							],
+							"path": [
+								"icon",
+								":username"
+							],
+							"variable": [
+								{
+									"key": "username",
+									"value": "user0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "icon: error",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}user/icon/:username",
+							"host": [
+								"{{host}}{{path}}user"
+							],
+							"path": [
+								"icon",
+								":username"
+							],
+							"variable": [
+								{
+									"key": "username",
+									"value": "user999999999"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list: default",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}user/list",
+							"host": [
+								"{{host}}{{path}}user"
+							],
+							"path": [
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list: test #1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}user/list?page=0&order=displayName-&search=&trash=0",
+							"host": [
+								"{{host}}{{path}}user"
+							],
+							"path": [
+								"list"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "order",
+									"value": "displayName-"
+								},
+								{
+									"key": "search",
+									"value": ""
+								},
+								{
+									"key": "trash",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list: test #2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}user/list?page=0&order=displayName-&search=jen&trash=0",
+							"host": [
+								"{{host}}{{path}}user"
+							],
+							"path": [
+								"list"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "order",
+									"value": "displayName-"
+								},
+								{
+									"key": "search",
+									"value": "jen"
+								},
+								{
+									"key": "trash",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list: test #3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}user/list?page=0&order=created_at-&search=&trash=0",
+							"host": [
+								"{{host}}{{path}}user"
+							],
+							"path": [
+								"list"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "order",
+									"value": "created_at-"
+								},
+								{
+									"key": "search",
+									"value": ""
+								},
+								{
+									"key": "trash",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list: test in trash",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}user/list?page=0&order=displayName-&search=&trash=1",
+							"host": [
+								"{{host}}{{path}}user"
+							],
+							"path": [
+								"list"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "order",
+									"value": "displayName-"
+								},
+								{
+									"key": "search",
+									"value": ""
+								},
+								{
+									"key": "trash",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update displayName",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user\": {\r\n        \"displayName\": \"Jenius\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}user/update/displayName",
+							"host": [
+								"{{host}}{{path}}user"
+							],
+							"path": [
+								"update",
+								"displayName"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update displayName: error",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user\": {\r\n        \"displayName_\": \"Nonono\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}user/update/displayName",
+							"host": [
+								"{{host}}{{path}}user"
+							],
+							"path": [
+								"update",
+								"displayName"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update password",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user\": {\r\n        \"password\": \"PASSWORD\",\r\n        \"confirmPassword\": \"PASSWORD\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}user/update/password",
+							"host": [
+								"{{host}}{{path}}user"
+							],
+							"path": [
+								"update",
+								"password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update password: error",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user\": {\r\n        \"password\": \"PASSWORD\",\r\n        \"confirmPassword\": \"PASSWOR_\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}user/update/password",
+							"host": [
+								"{{host}}{{path}}user"
+							],
+							"path": [
+								"update",
+								"password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "upload profile icon",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}{{path}}user/profile/icon",
+							"host": [
+								"{{host}}{{path}}user"
+							],
+							"path": [
+								"profile",
+								"icon"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "view profile icon",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}user/profile/icon",
+							"host": [
+								"{{host}}{{path}}user"
+							],
+							"path": [
+								"profile",
+								"icon"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "remove uploaded profile icon",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}user/profile/icon",
+							"host": [
+								"{{host}}{{path}}user"
+							],
+							"path": [
+								"profile",
+								"icon"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register: user4",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user\": {\r\n        \"username\": \"user4\",\r\n        \"displayName\": \"User 4\",\r\n        \"password\": \"user4//pass\",\r\n        \"confirmPassword\": \"user4//pass\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}user/register",
+							"host": [
+								"{{host}}{{path}}user"
+							],
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register: user5",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user\": {\r\n        \"username\": \"user5\",\r\n        \"displayName\": \"User 5\",\r\n        \"password\": \"user5//pass\",\r\n        \"confirmPassword\": \"user5//pass\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}user/register",
+							"host": [
+								"{{host}}{{path}}user"
+							],
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register: user6",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user\": {\r\n        \"username\": \"user6\",\r\n        \"displayName\": \"User 6\",\r\n        \"password\": \"user6//pass\",\r\n        \"confirmPassword\": \"user6//pass\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}user/register",
+							"host": [
+								"{{host}}{{path}}user"
+							],
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register: error",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user\": {\r\n        \"password\": \"user?//pass\",\r\n        \"confirmPassword\": \"user?//pass\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}user/register",
+							"host": [
+								"{{host}}{{path}}user"
+							],
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "unregister",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}{{path}}user/unregister",
+							"host": [
+								"{{host}}{{path}}user"
+							],
+							"path": [
+								"unregister"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{token}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

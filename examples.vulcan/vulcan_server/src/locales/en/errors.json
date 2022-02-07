@@ -1,0 +1,23 @@
+{
+	"timeout": "Timeout!",
+	"invalid token": "Invalid token!",
+	"require permissions": "Require permissions!",
+	"require permissions_user": "Require user rights!",
+	"require permissions_admin": "Require admin rights!",
+	"invalid username/password": "Invalid username or/and password!",
+	"user is unregistered": "This user is unregistered!",
+	"user is disabled by admin": "This user is disabled by admin!",
+	"not JSON": "Not a valid JSON!",
+	"not found": "Not found!",
+	"not found_user": "User not found!",
+	"not found_file": "File not found!",
+	"not found_directory": "Directory not found!",
+	"deleted": "Data is deleted!",
+	"already exists": "Already exists!",
+	"duplicate": "Data is duplicated!",
+	"no upload file": "No upload file!",
+	"upload file is not type": "Upload file is not a specify type!",
+	"upload file is not type_image": "Upload file is not an image file!",
+	"upload file is too large": "Upload file is too large!",
+	"validation failed": "Validation failed!"
+}

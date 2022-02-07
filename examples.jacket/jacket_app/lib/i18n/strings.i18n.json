@@ -1,0 +1,179 @@
+{
+	"app": "Jacket",
+	"switchLocale": {
+		"english": "English",
+		"thai": "ไทย"
+	},
+	"common": {
+		"close": "Close",
+		"ok": "OK",
+		"cancel": "Cancel",
+		"yes": "Yes",
+		"no": "No",
+		"retry": "Retry",
+		"name": "Name",
+		"value": "Value",
+		"create": "Create",
+		"createMore": "Create...",
+		"update": "Save",
+		"updateMore": "Save...",
+		"remove": "Delete",
+		"removeMore": "Delete..."
+	},
+	"question": {
+		"areYouSureToExit": "Are you sure to exit this program?",
+		"areYouSureToDelete": "Are you sure to delete this item?",
+		"areYouSureToLeave": "Are you sure to leave without save data?"
+	},
+	"validator": {
+		"isPositiveInt": "Please input $name as positive integer.",
+		"isPositiveOrZeroInt": "Please input $name as positive integer or zero.",
+		"isNegativeInt": "Please input $name as negative integer.",
+		"isNegativeOrZeroInt": "Please input $name as negative integer or zero.",
+		"isPositiveFloat": "Please input $name as positive floating-point.",
+		"isPositiveOrZeroFloat": "Please input $name as positive floating-point or zero.",
+		"isNegativeFloat": "Please input $name as negative floating-point.",
+		"isNegativeOrZeroFloat": "Please input $name as negative floating-point or zero.",
+		"isMoney": "Please input $name as money."
+	},
+	"messageBox": {
+		"info": "Information",
+		"warning": "Warning",
+		"error": "Error",
+		"question": "Question"
+	},
+	"waitBox": {
+		"message": "Please wait..."
+	},
+	"serviceRunner": {
+		"message": "Network error!"
+	},
+	"paginator": {
+		"first": "Go to first page.",
+		"previous": "Go to previous page.",
+		"next": "Go to next page.",
+		"last": "Go to last page.",
+		"go": "Go"
+	},
+	"imageChooser": {
+		"upload": "Upload",
+		"reset": "Reset",
+		"revert": "Revert"
+	},
+	"trash": {
+		"trash": "View in Trash",
+		"normal": "View Normal"
+	},
+	"appBar": {
+		"openMenu": "Open Profile Menu",
+		"editProfileIcon": "Edit Profile Icon...",
+		"editDisplayName": "Edit Display Name...",
+		"editPassword": "Edit Password...",
+		"needRelogin": "You have to re-login!",
+		"logout": "Logout"
+	},
+	"searchBar": {
+		"open": "Open search...",
+		"hint": "Search..."
+	},
+	"editProfileIconPage": {
+		"title": "Edit Profile Icon",
+		"profileIcon": "Profile Icon",
+		"profileIconUpload": "Upload Profile Icon",
+		"profileIconReset": "Reset Profile Icon"
+	},
+	"editDisplayNamePage": {
+		"title": "Edit Display Name",
+		"displayName": "Display Name",
+		"displayNameHint": "min length: 4 characters, max length: 50 characters",
+		"displayNameValidator": "Please input $name as 4-50 characters."
+	},
+	"editPasswordPage": {
+		"title": "Edit Password",
+		"password": "Password",
+		"passwordHint": "min length: 4 characters, max length: 20 characters",
+		"passwordValidator": "Please input $name as 4-20 characters.",
+		"confirmPassword": "Confirm Password",
+		"confirmPasswordHint": "min length: 4 characters, max length: 20 characters",
+		"confirmPasswordValidator": "Please input $name as 4-20 characters."
+	},
+	"drawerUi": {
+		"title": "Hello",
+		"home": "Home",
+		"sku": "SKU List",
+		"product": "Product List"
+	},
+	"loginPage": {
+		"title": "Login",
+		"username": "Username",
+		"password": "Password",
+		"reset": "Reset",
+		"ok": "Login",
+		"or": "-- or --",
+		"register": "Register..."
+	},
+	"registerPage": {
+		"title": "Register",
+		"username": "Username",
+		"usernameHint": "min length: 4 characters, max length: 20 characters",
+		"usernameValidator": "Please input $name as 4-20 characters.",
+		"displayName": "Display Name",
+		"displayNameHint": "min length: 4 characters, max length: 50 characters",
+		"displayNameValidator": "Please input $name as 4-50 characters.",
+		"password": "Password",
+		"passwordHint": "min length: 4 characters, max length: 20 characters",
+		"passwordValidator": "Please input $name as 4-20 characters.",
+		"confirmPassword": "Confirm Password",
+		"confirmPasswordHint": "min length: 4 characters, max length: 20 characters",
+		"confirmPasswordValidator": "Please input $name as 4-20 characters."
+	},
+	"dashboardPage": {
+		"title": "Dashboard",
+		"displayName": "Display Name",
+		"createdAi": "Registered Date"
+	},
+	"skuListPage": {
+		"title": "SKU List",
+		"sortById": "ID",
+		"sortByCodeAsc": "Code ASC",
+		"sortByCodeDesc": "Code DESC",
+		"sortByBarcodeAsc": "Barcode ASC",
+		"sortByBarcodeDesc": "Barcode DESC",
+		"sortByCostAsc": "Cost ASC",
+		"sortByCostDesc": "Cost DESC",
+		"sortByPriceAsc": "Price ASC",
+		"sortByPriceDesc": "Price DESC",
+		"sortByQuantityAsc": "Quantity ASC",
+		"sortByQuantityDesc": "Quantity DESC",
+		"barcodeFormat": "Barcode: $barcode",
+		"barcodeNotFound": "Barcode not found.",
+		"create": "Create SKU",
+		"createMore": "Create SKU...",
+		"createHint": "Create a new SKU."
+	},
+	"skuEditPage": {
+		"title": "Edit $name",
+		"barcode": "Barcode",
+		"barcodeHint": "such as: 123456789012, 12 digits or leave blank",
+		"barcodeValidator": "Please input $name as 12 characters or blank at all.",
+		"cost": "Cost",
+		"costHint": "cost to buy",
+		"price": "Price",
+		"priceHint": "price to sell",
+		"quantity": "Quantity",
+		"quantityHint": "quantity in stock",
+		"image": "SKU Image"
+	},
+	"productListPage": {
+		"title": "Product List",
+		"sortById": "ID",
+		"sortByNameAsc": "Name ASC",
+		"sortByNameDesc": "Name DESC",
+		"create": "Create Product",
+		"createMore": "Create Product...",
+		"createHint": "Create a new Product."
+	},
+	"productEditPage": {
+		"title": "Edit $name"
+	}
+}
